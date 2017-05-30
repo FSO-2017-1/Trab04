@@ -1,7 +1,7 @@
-system: clean libseno.o main.o
-	gcc -c main.c -lm -o trabalho_04 -L. -libseno
+system: clean libseno.o
+	gcc main.c -o trabalho_04 -L. -llibseno -lm
 	rm -rf *.o
-libseno.so: libseno.c
-	gcc  -shared -fPIC libseno.c -o libseno.so
+libseno.o:
+	gcc -shared -fPIC ../libseno.c -o libseno.so -lm
 clean:
 	rm -rf *.o
