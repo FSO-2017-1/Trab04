@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "libseno.h"
+#include "../libseno.h"
 
 int main(int argc, char const *argv[]) {
 
@@ -23,6 +23,6 @@ int main(int argc, char const *argv[]) {
     printf("arc_seno (%lf) = %lf\n", angulo, arc_senao);
   }else{
     printf("Erro na entrada de parâmetro  \n" );
-    
+
   }
 }
