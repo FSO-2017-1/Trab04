@@ -20,10 +20,8 @@ double seno(double angulo){
 
 double arc_seno(double seno){
 	double arc_seno;
-	if(seno == 0){
-		arc_seno = 0;
-	}else{
-		arc_seno = 1/seno;
-	}
+
+	arc_seno = seno + pow(seno, 3) / 6 + 3 * (pow (seno, 5))/40 + 5 * (pow(seno, 7))/112 + 35 * (pow(seno, 9))/1152;
+
 	return arc_seno;
 }
