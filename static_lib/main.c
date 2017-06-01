@@ -9,7 +9,6 @@ int main(int argc, char const *argv[]) {
 
   sscanf(argv[2], "%lf", &angulo);
 
-
   if (strcmp(argv[1], "-s")==0) {
     double senao = seno(angulo);
     printf("seno (%.2lf) = %lf\n", angulo, senao);
