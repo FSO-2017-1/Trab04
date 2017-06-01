@@ -1,6 +1,6 @@
-system: libseno.o
+system: libseno.so
 	gcc main.o -o trabalho_04 -L. -lseno -Wl,-rpath,.
-libseno.o:
+libseno.so:
 	gcc -c -fPIC main.c ../libseno.c
 	gcc -shared -fPIC -o libseno.so libseno.o main.o
 clean:
