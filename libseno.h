@@ -4,5 +4,6 @@
 int fatorial(int n);
 double seno(double angulo);
 double arc_seno(double seno);
+double power(double x, int y);
 
 #endif
